@@ -20,12 +20,12 @@ O projeto consistiu na análise de um arquivo JavaScript ofuscado que utilizava 
 - Executou os scripts de extração e contornou os limites de tokens de outras Inteligências Artificiais, permitindo o download completo do arquivo.
 - Realizou a edição manual: removeu o bloco original `CrackyAccess` e substituiu pelo objeto falso de bypass.
 - Analisou os dados para identificar a falha de execução no carregamento e aplicou uma correção, resultando na inicialização bem-sucedida do cheat.
-- Forneceu métodos para contornar bloqueios de segurança do navegador (Trusted Types) durante a extração
+- Forneceu métodos para contornar bloqueios de segurança do navegador (Trusted Types) durante a extração. (Que funcionaram)
 
 **3. Inteligência Artificial (chat.deepseek.com)**
 - Analisou o arquivo ofuscado e identificou o algoritmo de criptografia (XOR com deslocamento e FNV-1a).
 - Construiu um ambiente simulado (Sandbox) em Node.js com stubs para objetos do navegador (`CanvasRenderingContext2D`, `location`, `document`, etc.), permitindo que o script original rodasse e descriptografasse a si mesmo sem falhar por falta de APIs.
-- Forneceu métodos para contornar bloqueios de segurança do navegador (Trusted Types) durante a extração.
+- Forneceu métodos para contornar bloqueios de segurança do navegador (Trusted Types) durante a extração. **(Nenhum funcionou kkk)**
 - Desenvolveu o objeto de Bypass (`CrackyAccess`), mapeando as funções necessárias (`boot`, `isUnlocked`, `keyValid`, etc.) para que o segundo bloco de inicialização do código não falhasse e abrisse o menu sem as verificações de segurança.
 
 ## Processo de Execução
@@ -39,3 +39,7 @@ O projeto consistiu na análise de um arquivo JavaScript ofuscado que utilizava 
 ## Resultado Final
 
 O arquivo final roda sem realizar requisições ao YouTube ou ao BSTLR, não exibe a tela de bloqueio de Key Auth e ignora a verificação de integridade original do autor. O menu do cheat é inicializado diretamente ao abrir a página do jogo.
+
+## Dev Note
+
+Uma função simples que levou mais tempo que deveria, infelizmente para ter velocidade + bom desempenho é necessario uma IA paga, em breve usarei modelos locais, o que acredito que deve ampliar MUITO o que consigo programar sem gastar nada. Até lá apenas projetos simples para fins de estudo. 

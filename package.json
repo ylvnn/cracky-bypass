@@ -1,0 +1,11 @@
+{
+  "name": "cracky-bypass",
+  "version": "1.0.0",
+  "description": "Reverse engineering e bypass de autenticação para userscript Krunker",
+  "main": "extract.js",
+  "scripts": {
+    "extract": "node extract.js"
+  },
+  "author": "ylvnn (m)",
+  "license": "MIT"
+}
